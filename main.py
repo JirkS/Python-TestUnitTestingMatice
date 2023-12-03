@@ -1,7 +1,6 @@
 import unittest
 from Matice import Matice
 
-# Zde upravte import pro tridu Matice
 
 class MatrixTestCase(unittest.TestCase):
 
@@ -86,5 +85,7 @@ class MatrixTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
-
+    try:
+        unittest.main()
+    except Exception as e:
+        print(e)
